@@ -1,6 +1,6 @@
 services:
   nextcloud:
-    image: nextcloud:30.0.2
+    image: nextcloud:32.0.5
     restart: always
 
     ports:
@@ -30,7 +30,3 @@ services:
 volumes:
   nextcloud_data:
   nextcloud_db_data:
-
-networks:
-  dokploy-network:
-    external: true
